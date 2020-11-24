@@ -1,0 +1,58 @@
+/* External Css*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+ol ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0;
+}
+.clr{
+	clear: both;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+.galary_part{
+	background: #000;
+    padding: 30px;
+}
+.heading{
+	text-align: center;
+}
+.heading h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: #ebebeb;
+}
+.heading p{
+	font-size: 24px;
+    font-weight: 400;
+    color: #ebebeb;
+}
+.portfolio-item{
+    padding: 50px;
+}
+.protfolio-img{
+	height: 300px;
+	margin-left: 20px;
+}
+.registraion-section{
+	padding: 30px;
+}
+.registration-box{
+	padding: 20px;
+	background: #f7f7f7;
+	box-shadow: 0px 0px 5px #d2cece;
+}
+.login-box{
+	padding: 20px;
+	background: #f7f7f7;
+	box-shadow: 0px 0px 5px #d2cece;
+}

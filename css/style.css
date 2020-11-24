@@ -1,0 +1,188 @@
+/* External Css*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+ol ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0;
+}
+.clr{
+	clear: both;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+.wrapper-full{
+	width: 100%;
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+.banner{
+	background: url(../images/banner.png);
+	height: 550px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.header-top{
+	width: 200px;
+}
+.logo-part{
+	width: 250px;
+	float: left;
+	margin-top: 55px;
+}
+.menu-part{
+	width: 950px;
+	float: left;
+}
+.menu-part ul{
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-top: -50px;
+
+}
+.menu-part ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.menu-part ul li:last-child{
+	margin-right: 0px;
+}
+.menu-part ul li a{
+	font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px 20px;
+    background: #999999;
+    transition: all linear.5s;
+}
+.menu-part ul li a:hover{
+	background: #2b6f0f;
+	transition: all linear.5s;
+}
+.header-content{
+	height: 230px;
+	text-align: center;
+	margin-left: 20px;
+	padding-top: 200px;
+}
+.header-content h3{
+	font-size: 38px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.header-content p{
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 60px;
+
+}
+.header-content a{
+	font-size: 21px;
+	font-weight: 400;
+	color: #fff;
+	padding: 10px 30px;
+	background: #a4b9be;
+	border-radius: 3px;
+	transition: all linear.5s;
+}
+.header-content a:hover{
+	background: #2b6f0f;
+	color: #ddd;
+	transition: all linear.5s;
+}
+/*Header 1st Parts css ends*/
+/*Second Parts css starts*/
+.galary_part{
+	background: #cae6a5;
+    padding: 30px;
+}
+.galary_part_heading{
+	text-align: center;
+}
+.galary_part_heading h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #191616;
+}
+.galary_part_heading p{
+	font-size: 20px;
+    font-weight: 400;
+    color: #191616;
+    margin-top: 10px;
+}
+.portfolio-item{
+    padding: 50px;
+}
+.protfolio-img{
+	height: 300px;
+	margin-left: 20px;
+}
+/*Second Parts css ends*/
+/*Form Parts starts*/
+.contact{
+	background: #2d3035;
+	padding: 40px 0px;
+	text-align: center;
+	padding: 80px 0px;
+}
+.contact h4{
+	font-size: 38px;
+	font-weight: 700;
+	color: #f1f1f1;
+	margin-bottom: 30px;
+}
+.contact p{
+	font-size: 21px;
+	font-weight: 400;
+	color: #98a0a5;
+	margin-bottom: 60px;
+}
+.contact-form{
+	width: 400px;
+	margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+	width: 100%;
+	border: none;
+	background: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+	border: 1px solid #e9eef2;
+	margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+textarea{
+	resize: none;
+	height: 110;
+	}
+button{
+	padding: 20px 0px;
+	width: 433px;
+	background: #a4b9be;
+	color: #2d3035;
+	border: none;
+	border-radius: 4px;
+}
+/*Form Parts ends*/
