@@ -1,4 +1,9 @@
-@include('includes.header')
+@extends('layouts.includes.master')
+
+@section('title', 'Students Information Update')
+
+
+@section('content')
 <!-- container-fluid -->
         <div class="container-fluid">
           <!-- Basic Card Example -->
@@ -42,4 +47,4 @@
               </div>
             </div>
  		</div>
-        @include('includes.footer')
+        @endsection('content')

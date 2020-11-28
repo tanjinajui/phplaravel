@@ -24,6 +24,8 @@
                 <a href="/departments">View Departments</a>
                 <a href="/students/create">Students Create</a>
                 <a href="/students">View Students List</a>
+                <a href="/admissions/create">Admission New Students Create</a>
+                <a href="/admissions">Admission Students List</a>
             </div>
         </div>
     </div>

@@ -35,3 +35,8 @@ Route::get('/', function () {
  Route::get('/students/{id}/edit','StudentController@edit');
  Route::post('/students/{id}','StudentController@update');
  Route::get('/students/destory/{id}','StudentController@destory');
+
+ //AdmissionControler
+ Route::get('admissions/create','AdmissionController@create');
+ Route::post('admissions','AdmissionController@store');
+ Route::get('admissions','AdmissionController@index');

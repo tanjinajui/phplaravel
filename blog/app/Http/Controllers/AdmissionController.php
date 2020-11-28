@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Departments;
-use App\Students;
+use App\Admissions;
 
-class StudentController extends Controller
+class AdmissionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,12 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $students=Students::orderBy('id','desc')->paginate(3);
-        return view('Student.index',compact('students'));
+        //all data show
+        //$admissions=Admissions::all();
+        // data first asc or last theke show desc
+        $admissions=Admissions::orderBy('id','asc')->paginate(2);
+        return view('Admission.index',compact('admissions'));
     }
-    // data view 
-    
 
     /**
      * Show the form for creating a new resource.
@@ -29,7 +30,7 @@ class StudentController extends Controller
     public function create()
     {
         $departments=Departments::all();
-        return view('Student.create',compact('departments'));
+        return view('Admission.create',compact('departments'));
     }
 
     /**
@@ -40,17 +41,16 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //form validation
+         //form validation
         $request->validate([
         'student_id' => 'required',
         'student_name' => 'required',
-        'student_address' => 'required|max:255',
-        'student_email' => 'required|unique:students',
-        'student_mobile' => 'required|unique:students',
+        'departments_id' => 'required',
+        'student_section_name' => 'required',
     ]);
         $data_add=$request->all();
-        Students::create($data_add);
-        return redirect('/students')->with('success', 'Data inserted successfully');
+        Admissions::create($data_add);
+        return redirect('/admissions')->with('success', 'Data inserted successfully');
         // $data_add=$request->all();
         // Students::create($data_add);
         // return back();
@@ -75,8 +75,7 @@ class StudentController extends Controller
      */
     public function edit($id)
     {
-       $data_show=Students::find($id);
-       return view('Student.edit',compact('data_show'));
+        //
     }
 
     /**
@@ -86,12 +85,9 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $update, $id)
+    public function update(Request $request, $id)
     {
-        $data=Students::find($id);
-        $update_data=$update->all();
-        $data->update($update_data);
-        return redirect('/students')->with('success','Student information update successfully');
+        //
     }
 
     /**
@@ -102,11 +98,6 @@ class StudentController extends Controller
      */
     public function destroy($id)
     {
-        $data_show=Students::find($id);
-        $data_show->destroy();
-        //return back dile delete hoye oi page thakbe
-        return back()->with('success',"Delete this data");
-        // redirect je page debo delete hoye se page a jabe
-        return redirect('/students')->with('success',"Delete this data");
+        //
     }
 }

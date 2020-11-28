@@ -1,4 +1,9 @@
-@include('includes.header')
+@extends('layouts.includes.master')
+
+@section('title', 'All Departments View')
+
+
+@section('content')
 
 
 	<div class="container">
@@ -40,4 +45,4 @@
 </div>
 </div>
 </div>
-@include('includes.footer')
+@endsection('content')
